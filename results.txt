@@ -1,0 +1,612 @@
+Epoch : 50, batch_size : 1, lr : 0.0001
+test loss: 7.902018070220947
+test acc: 0.31537940379403795
+
+Epoch : 50, batch_size : 1, lr : 0.001
+test loss: 4.813022136688232
+test acc: 0.008130081300813009
+
+Epoch : 50, batch_size : 1, lr : 0.01
+test loss: 4.82469367980957
+test acc: 0.008130081300813009
+
+Epoch : 50, batch_size : 1, lr : 0.0005
+test loss: 4.812692165374756
+test acc: 0.008130081300813009
+
+Epoch : 50, batch_size : 4, lr : 0.0001
+test loss: 3.5149495601654053
+test acc: 0.46510840108401086
+
+Epoch : 50, batch_size : 4, lr : 0.001
+test loss: 4.8127217292785645
+test acc: 0.008130081300813009
+
+Epoch : 50, batch_size : 4, lr : 0.01
+test loss: 4.816234111785889
+test acc: 0.008130081300813009
+
+Epoch : 50, batch_size : 4, lr : 0.0005
+test loss: 5.22456169128418
+test acc: 0.1402439024390244
+
+Epoch : 50, batch_size : 16, lr : 0.0001
+test loss: 4.200562000274658
+test acc: 0.3033783783783784
+
+Epoch : 50, batch_size : 16, lr : 0.001
+test loss: 5.095637321472168
+test acc: 0.05337837837837838
+
+Epoch : 50, batch_size : 16, lr : 0.01
+test loss: 4.814479827880859
+test acc: 0.008445945945945946
+
+Epoch : 50, batch_size : 16, lr : 0.0005
+test loss: 6.134303092956543
+test acc: 0.2418918918918919
+
+Epoch : 50, batch_size : 32, lr : 0.0001
+test loss: 2.4760403633117676
+test acc: 0.46606182795698925
+
+Epoch : 50, batch_size : 32, lr : 0.001
+test loss: 4.88318395614624
+test acc: 0.135752688172043
+
+Epoch : 50, batch_size : 32, lr : 0.01
+test loss: 4.813632965087891
+test acc: 0.008064516129032258
+
+Epoch : 50, batch_size : 32, lr : 0.0005
+test loss: 8.067680358886719
+test acc: 0.2385752688172043
+
+Epoch : 50, batch_size : 64, lr : 0.0001
+test loss: 2.625838279724121
+test acc: 0.38763297872340424
+
+Epoch : 50, batch_size : 64, lr : 0.001
+test loss: 5.134300708770752
+test acc: 0.1998005319148936
+
+Epoch : 50, batch_size : 64, lr : 0.01
+test loss: 4.813041687011719
+test acc: 0.007978723404255319
+
+Epoch : 50, batch_size : 64, lr : 0.0005
+test loss: 4.213005065917969
+test acc: 0.125
+
+Epoch : 100, batch_size : 1, lr : 0.0001
+test loss: 4.81226921081543
+test acc: 0.008130081300813009
+
+Epoch : 100, batch_size : 1, lr : 0.001
+test loss: 4.81304931640625
+test acc: 0.008130081300813009
+
+Epoch : 100, batch_size : 1, lr : 0.01
+test loss: 4.825684070587158
+test acc: 0.008130081300813009
+
+Epoch : 100, batch_size : 1, lr : 0.0005
+test loss: 4.812599182128906
+test acc: 0.008130081300813009
+
+Epoch : 100, batch_size : 4, lr : 0.0001
+test loss: 2.870171546936035
+test acc: 0.6104336043360433
+
+Epoch : 100, batch_size : 4, lr : 0.001
+test loss: 4.812528610229492
+test acc: 0.008130081300813009
+
+Epoch : 100, batch_size : 4, lr : 0.01
+test loss: 4.816578388214111
+test acc: 0.008130081300813009
+
+Epoch : 100, batch_size : 4, lr : 0.0005
+test loss: 6.324467658996582
+test acc: 0.03116531165311653
+
+Epoch : 100, batch_size : 16, lr : 0.0001
+test loss: 3.208554744720459
+test acc: 0.5726351351351351
+
+Epoch : 100, batch_size : 16, lr : 0.001
+test loss: 4.812511920928955
+test acc: 0.008108108108108109
+
+Epoch : 100, batch_size : 16, lr : 0.01
+test loss: 4.81556510925293
+test acc: 0.008108108108108109
+
+Epoch : 100, batch_size : 16, lr : 0.0005
+test loss: 4.862133026123047
+test acc: 0.5108108108108108
+
+Epoch : 100, batch_size : 32, lr : 0.0001
+test loss: 2.080216884613037
+test acc: 0.7140456989247311
+
+Epoch : 100, batch_size : 32, lr : 0.001
+test loss: 4.812312126159668
+test acc: 0.008064516129032258
+
+Epoch : 100, batch_size : 32, lr : 0.01
+test loss: 4.813658237457275
+test acc: 0.008064516129032258
+
+Epoch : 100, batch_size : 32, lr : 0.0005
+test loss: 6.580042839050293
+test acc: 0.28158602150537637
+
+Epoch : 100, batch_size : 64, lr : 0.0001
+test loss: 1.8063836097717285
+test acc: 0.6938164893617021
+
+Epoch : 100, batch_size : 64, lr : 0.001
+test loss: 8.755139350891113
+test acc: 0.35970744680851063
+
+Epoch : 100, batch_size : 64, lr : 0.01
+test loss: 4.813275337219238
+test acc: 0.007978723404255319
+
+Epoch : 100, batch_size : 64, lr : 0.0005
+test loss: 4.633635997772217
+test acc: 0.2144281914893617
+
+Epoch : 150, batch_size : 1, lr : 0.0001
+test loss: 4.8122758865356445
+test acc: 0.008130081300813009
+
+Epoch : 150, batch_size : 1, lr : 0.001
+test loss: 4.813155651092529
+test acc: 0.008130081300813009
+
+Epoch : 150, batch_size : 1, lr : 0.01
+test loss: 4.825571060180664
+test acc: 0.008130081300813009
+
+Epoch : 150, batch_size : 1, lr : 0.0005
+test loss: 4.812680721282959
+test acc: 0.008130081300813009
+
+Epoch : 150, batch_size : 4, lr : 0.0001
+test loss: 3.706286668777466
+test acc: 0.5562330623306233
+
+Epoch : 150, batch_size : 4, lr : 0.001
+test loss: 4.812549114227295
+test acc: 0.008130081300813009
+
+Epoch : 150, batch_size : 4, lr : 0.01
+test loss: 4.816938877105713
+test acc: 0.008130081300813009
+
+Epoch : 150, batch_size : 4, lr : 0.0005
+test loss: 5.732015132904053
+test acc: 0.5579268292682927
+
+Epoch : 150, batch_size : 16, lr : 0.0001
+test loss: 2.893505096435547
+test acc: 0.6483108108108108
+
+Epoch : 150, batch_size : 16, lr : 0.001
+test loss: 4.812460899353027
+test acc: 0.008108108108108109
+
+Epoch : 150, batch_size : 16, lr : 0.01
+test loss: 4.814854145050049
+test acc: 0.008108108108108109
+
+Epoch : 150, batch_size : 16, lr : 0.0005
+test loss: 6.009011268615723
+test acc: 0.46621621621621623
+
+Epoch : 150, batch_size : 32, lr : 0.0001
+test loss: 2.1078178882598877
+test acc: 0.6629704301075269
+
+Epoch : 150, batch_size : 32, lr : 0.001
+test loss: 6.607132911682129
+test acc: 0.4173387096774194
+
+Epoch : 150, batch_size : 32, lr : 0.01
+test loss: 4.814267635345459
+test acc: 0.008064516129032258
+
+Epoch : 150, batch_size : 32, lr : 0.0005
+test loss: 4.812317371368408
+test acc: 0.008064516129032258
+
+Epoch : 150, batch_size : 64, lr : 0.0001
+test loss: 1.4822998046875
+test acc: 0.742686170212766
+
+Epoch : 150, batch_size : 64, lr : 0.001
+test loss: 9.604399681091309
+test acc: 0.2722739361702128
+
+Epoch : 150, batch_size : 64, lr : 0.01
+test loss: 4.813430309295654
+test acc: 0.007978723404255319
+
+Epoch : 150, batch_size : 64, lr : 0.0005
+test loss: 5.767747402191162
+test acc: 0.48371010638297873
+
+Epoch : 200, batch_size : 1, lr : 0.0001
+test loss: 5.292969226837158
+test acc: 0.5538617886178862
+
+Epoch : 200, batch_size : 1, lr : 0.001
+test loss: 4.8131103515625
+test acc: 0.008130081300813009
+
+Epoch : 200, batch_size : 1, lr : 0.01
+test loss: 4.824503421783447
+test acc: 0.008130081300813009
+
+Epoch : 200, batch_size : 1, lr : 0.0005
+test loss: 4.812748908996582
+test acc: 0.008130081300813009
+
+Epoch : 200, batch_size : 4, lr : 0.0001
+test loss: 4.185196876525879
+test acc: 0.5782520325203252
+
+Epoch : 200, batch_size : 4, lr : 0.001
+test loss: 4.812583923339844
+test acc: 0.008130081300813009
+
+Epoch : 200, batch_size : 4, lr : 0.01
+test loss: 4.81654691696167
+test acc: 0.008130081300813009
+
+Epoch : 200, batch_size : 4, lr : 0.0005
+test loss: 4.812453269958496
+test acc: 0.008130081300813009
+
+Epoch : 200, batch_size : 16, lr : 0.0001
+test loss: 2.534027099609375
+test acc: 0.6375
+
+Epoch : 200, batch_size : 16, lr : 0.001
+test loss: 4.812475204467773
+test acc: 0.008108108108108109
+
+Epoch : 200, batch_size : 16, lr : 0.01
+test loss: 4.814687252044678
+test acc: 0.008108108108108109
+
+Epoch : 200, batch_size : 16, lr : 0.0005
+test loss: 4.812280178070068
+test acc: 0.008108108108108109
+
+Epoch : 200, batch_size : 32, lr : 0.0001
+test loss: 1.7932243347167969
+test acc: 0.7211021505376344
+
+Epoch : 200, batch_size : 32, lr : 0.001
+test loss: 5.042660713195801
+test acc: 0.5161290322580645
+
+Epoch : 200, batch_size : 32, lr : 0.01
+test loss: 4.813442707061768
+test acc: 0.008064516129032258
+
+Epoch : 200, batch_size : 32, lr : 0.0005
+test loss: 3.7397663593292236
+test acc: 0.5940860215053764
+
+Epoch : 200, batch_size : 64, lr : 0.0001
+test loss: 1.5870898962020874
+test acc: 0.75
+
+Epoch : 200, batch_size : 64, lr : 0.001
+test loss: 4.812290668487549
+test acc: 0.007978723404255319
+
+Epoch : 200, batch_size : 64, lr : 0.01
+test loss: 4.813035488128662
+test acc: 0.007978723404255319
+
+Epoch : 200, batch_size : 64, lr : 0.0005
+test loss: 4.221642971038818
+test acc: 0.5478723404255319
+
+Epoch : 300, batch_size : 1, lr : 0.0001
+test loss: 4.81229829788208
+test acc: 0.008130081300813009
+
+Epoch : 300, batch_size : 1, lr : 0.001
+test loss: 4.813066482543945
+test acc: 0.008130081300813009
+
+Epoch : 300, batch_size : 1, lr : 0.01
+test loss: 4.82464075088501
+test acc: 0.008130081300813009
+
+Epoch : 300, batch_size : 1, lr : 0.0005
+test loss: 4.812613010406494
+test acc: 0.008130081300813009
+
+Epoch : 300, batch_size : 4, lr : 0.0001
+test loss: 4.444265365600586
+test acc: 0.6371951219512195
+
+Epoch : 300, batch_size : 4, lr : 0.001
+test loss: 10.430765151977539
+test acc: 0.009485094850948509
+
+Epoch : 300, batch_size : 4, lr : 0.01
+test loss: 4.816904067993164
+test acc: 0.008130081300813009
+
+Epoch : 300, batch_size : 4, lr : 0.0005
+test loss: 4.812448024749756
+test acc: 0.008130081300813009
+
+Epoch : 300, batch_size : 16, lr : 0.0001
+test loss: 2.085909366607666
+test acc: 0.7202702702702702
+
+Epoch : 300, batch_size : 16, lr : 0.001
+test loss: 4.812346935272217
+test acc: 0.008108108108108109
+
+Epoch : 300, batch_size : 16, lr : 0.01
+test loss: 4.814579486846924
+test acc: 0.008108108108108109
+
+Epoch : 300, batch_size : 16, lr : 0.0005
+test loss: 12.221029281616211
+test acc: 0.20304054054054055
+
+Epoch : 300, batch_size : 32, lr : 0.0001
+test loss: 1.7705994844436646
+test acc: 0.7654569892473119
+
+Epoch : 300, batch_size : 32, lr : 0.001
+test loss: 4.81230354309082
+test acc: 0.008064516129032258
+
+Epoch : 300, batch_size : 32, lr : 0.01
+test loss: 4.81356954574585
+test acc: 0.008064516129032258
+
+Epoch : 300, batch_size : 32, lr : 0.0005
+test loss: 8.723272323608398
+test acc: 0.3803763440860215
+
+Epoch : 300, batch_size : 64, lr : 0.0001
+test loss: 1.784488558769226
+test acc: 0.7376994680851063
+
+Epoch : 300, batch_size : 64, lr : 0.001
+test loss: 4.81226921081543
+test acc: 0.007978723404255319
+
+Epoch : 300, batch_size : 64, lr : 0.01
+test loss: 4.81381368637085
+test acc: 0.007978723404255319
+
+Epoch : 300, batch_size : 64, lr : 0.0005
+test loss: 4.579095840454102
+test acc: 0.586436170212766
+
+Epoch : 200, batch_size : 32, lr : 0.0001
+test loss: 1.9597293138504028
+test acc: 0.7563844086021505
+
+Epoch : 200, batch_size : 32, lr : 5e-05
+test loss: 1.7306698560714722
+test acc: 0.7439516129032258
+
+Epoch : 200, batch_size : 32, lr : 1e-05
+test loss: 2.269507884979248
+test acc: 0.6189516129032258
+
+Epoch : 200, batch_size : 64, lr : 0.0001
+test loss: 1.4531434774398804
+test acc: 0.7456781914893617
+
+Epoch : 200, batch_size : 64, lr : 5e-05
+test loss: 1.723159670829773
+test acc: 0.7170877659574468
+
+Epoch : 200, batch_size : 64, lr : 1e-05
+test loss: 2.18509578704834
+test acc: 0.6196808510638298
+
+Epoch : 200, batch_size : 128, lr : 0.0001
+test loss: 1.846143126487732
+test acc: 0.7027994791666666
+
+Epoch : 200, batch_size : 128, lr : 5e-05
+test loss: 2.0794785022735596
+test acc: 0.6497395833333334
+
+Epoch : 200, batch_size : 128, lr : 1e-05
+test loss: 2.1606571674346924
+test acc: 0.5569661458333334
+
+Epoch : 300, batch_size : 32, lr : 0.0001
+test loss: 1.9584619998931885
+test acc: 0.7610887096774194
+
+Epoch : 300, batch_size : 32, lr : 5e-05
+test loss: 1.7381466627120972
+test acc: 0.7422715053763441
+
+Epoch : 300, batch_size : 32, lr : 1e-05
+test loss: 2.0189101696014404
+test acc: 0.6720430107526881
+
+Epoch : 300, batch_size : 64, lr : 0.0001
+test loss: 1.7289652824401855
+test acc: 0.7350398936170213
+
+Epoch : 300, batch_size : 64, lr : 5e-05
+test loss: 1.4999022483825684
+test acc: 0.758311170212766
+
+Epoch : 300, batch_size : 64, lr : 1e-05
+test loss: 2.3107080459594727
+test acc: 0.6898271276595744
+
+Epoch : 300, batch_size : 128, lr : 0.0001
+test loss: 1.6139460802078247
+test acc: 0.7659505208333334
+
+Epoch : 300, batch_size : 128, lr : 5e-05
+test loss: 2.187985420227051
+test acc: 0.6682942708333334
+
+Epoch : 300, batch_size : 128, lr : 1e-05
+test loss: 2.199186086654663
+test acc: 0.5970052083333334
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 1.7901904582977295
+test acc: 0.7731854838709677
+
+Epoch : 500, batch_size : 32, lr : 5e-05
+test loss: 1.7385015487670898
+test acc: 0.748991935483871
+
+Epoch : 500, batch_size : 32, lr : 1e-05
+test loss: 1.6860333681106567
+test acc: 0.7426075268817204
+
+Epoch : 500, batch_size : 64, lr : 0.0001
+test loss: 1.6329766511917114
+test acc: 0.7666223404255319
+
+Epoch : 500, batch_size : 64, lr : 5e-05
+test loss: 1.802139401435852
+test acc: 0.7277260638297872
+
+Epoch : 500, batch_size : 64, lr : 1e-05
+test loss: 2.126542329788208
+test acc: 0.7376994680851063
+
+Epoch : 500, batch_size : 128, lr : 0.0001
+test loss: 1.5634316205978394
+test acc: 0.7291666666666666
+
+Epoch : 500, batch_size : 128, lr : 5e-05
+test loss: 1.6483397483825684
+test acc: 0.771484375
+
+Epoch : 500, batch_size : 128, lr : 1e-05
+test loss: 2.542581796646118
+test acc: 0.6337890625
+
+Epoch : 1000, batch_size : 32, lr : 0.0001
+test loss: 2.445492744445801
+test acc: 0.7022849462365591
+
+Epoch : 1000, batch_size : 32, lr : 5e-05
+test loss: 2.12954044342041
+test acc: 0.7641129032258065
+
+Epoch : 1000, batch_size : 32, lr : 1e-05
+test loss: 1.8328429460525513
+test acc: 0.7641129032258065
+
+Epoch : 1000, batch_size : 64, lr : 0.0001
+test loss: 3.036306619644165
+test acc: 0.676529255319149
+
+Epoch : 1000, batch_size : 64, lr : 5e-05
+test loss: 1.8914320468902588
+test acc: 0.7267287234042553
+
+Epoch : 1000, batch_size : 64, lr : 1e-05
+test loss: 1.8823014497756958
+test acc: 0.7553191489361702
+
+Epoch : 1000, batch_size : 128, lr : 0.0001
+test loss: 1.87410306930542
+test acc: 0.6995442708333334
+
+Epoch : 1000, batch_size : 128, lr : 5e-05
+test loss: 1.7492008209228516
+test acc: 0.7467447916666666
+
+Epoch : 1000, batch_size : 128, lr : 1e-05
+test loss: 2.3451712131500244
+test acc: 0.6650390625
+
+Epoch : 3, batch_size : 32, lr : 0.0001
+test loss: 4.685229778289795
+test acc: 0.02721774193548387
+
+Epoch : 3, batch_size : 32, lr : 0.0001
+test loss: 4.712078094482422
+test acc: 0.01478494623655914
+
+Epoch : 3, batch_size : 32, lr : 0.0001
+test loss: 4.673000335693359
+test acc: 0.025537634408602152
+
+Epoch : 1, batch_size : 32, lr : 0.0001
+test loss: 4.812507629394531
+test acc: 0.012096774193548387
+
+Epoch : 1, batch_size : 32, lr : 0.0001
+test loss: 4.785974502563477
+test acc: 0.008064516129032258
+
+Epoch : 1, batch_size : 32, lr : 0.0001
+test loss: 4.781786918640137
+test acc: 0.02788978494623656
+
+Epoch : 1, batch_size : 32, lr : 0.0001
+test loss: 4.791548728942871
+test acc: 0.010416666666666666
+
+Epoch : 1, batch_size : 32, lr : 0.0001
+test loss: 4.8134446144104
+test acc: 0.022513440860215055
+
+Epoch : 1, batch_size : 32, lr : 0.0001
+test loss: 4.797693729400635
+test acc: 0.008064516129032258
+
+Epoch : 1, batch_size : 32, lr : 0.0001
+test loss: 4.757413387298584
+test acc: 0.021169354838709676
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 6.294004917144775
+test acc: 0.008400537634408602
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 2.0904693603515625
+test acc: 0.6586021505376344
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 10.401104927062988
+test acc: 0.007056451612903226
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 7.442684173583984
+test acc: 0.005376344086021506
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 6.708555221557617
+test acc: 0.008064516129032258
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 5.414254188537598
+test acc: 0.003360215053763441
+
+Epoch : 500, batch_size : 32, lr : 0.0001
+test loss: 2.8565332889556885
+test acc: 0.6159274193548387
+

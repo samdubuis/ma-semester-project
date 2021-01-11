@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>The Idiap Research Institute VERA Fingervein Database</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="the-idiap-research-institute-vera-fingervein-database">
+<h1 class="title">The Idiap Research Institute VERA Fingervein Database</h1>
+
+<p>The VERA Fingervein Database for finger vein biometric recognition consists
+of 440 images from 110 clients.  The dataset also contains presentation (a.k.a.
+<em>spoofing</em>) attacks to the same 440 images that can be used to study
+vulnerability of biometric systems or presentation attack detection schemes.
+This database was produced at the <a class="reference external" href="https://www.idiap.ch">Idiap Research Institute</a> and Haute Ecole
+Spécialisée de Suisse Occidentale in Sion, in Switzerland.</p>
+<p>If you use this database in your publication, please cite one or more of the
+following papers on your references. This database introduced the VERA
+fingervein dataset for biometric recognition:</p>
+<pre class="code bibtex literal-block">
+<span class="name class">&#64;inproceedings</span><span class="punctuation">{</span><span class="name label">Vanoni_BIOMS_2014</span><span class="punctuation">,</span>
+  <span class="name attribute">author</span> <span class="punctuation">=</span> <span class="literal string">{Vanoni, Matthias and Tome, Pedro and El Shafey, Laurent and Marcel, S{\'{e}}bastien}</span><span class="punctuation">,</span>
+  <span class="name attribute">month</span> <span class="punctuation">=</span> <span class="name variable">oct</span><span class="punctuation">,</span>
+  <span class="name attribute">title</span> <span class="punctuation">=</span> <span class="literal string">{Cross-Database Evaluation With an Open Finger Vein Sensor}</span><span class="punctuation">,</span>
+  <span class="name attribute">booktitle</span> <span class="punctuation">=</span> <span class="literal string">{IEEE Workshop on Biometric Measurements and Systems for Security and Medical Applications (BioMS)}</span><span class="punctuation">,</span>
+  <span class="name attribute">year</span> <span class="punctuation">=</span> <span class="literal string">{2014}</span><span class="punctuation">,</span>
+  <span class="name attribute">location</span> <span class="punctuation">=</span> <span class="literal string">{Rome, Italy}</span><span class="punctuation">,</span>
+  <span class="name attribute">url</span> <span class="punctuation">=</span> <span class="literal string">{http://publications.idiap.ch/index.php/publications/show/2928}</span>
+<span class="punctuation">}</span>
+</pre>
+<p>This paper introduced fingervein vulnerability, providing recipes and a set of
+attacks for checking existing biometric pipelines:</p>
+<pre class="code bibtex literal-block">
+<span class="name class">&#64;inproceedings</span><span class="punctuation">{</span><span class="name label">Tome_IEEEBIOSIG2014</span><span class="punctuation">,</span>
+  <span class="name attribute">author</span> <span class="punctuation">=</span> <span class="literal string">{Tome, Pedro and Vanoni, Matthias and Marcel, S{\'{e}}bastien}</span><span class="punctuation">,</span>
+  <span class="name attribute">keywords</span> <span class="punctuation">=</span> <span class="literal string">{Biometrics, Finger vein, Spoofing Attacks}</span><span class="punctuation">,</span>
+  <span class="name attribute">month</span> <span class="punctuation">=</span> <span class="name variable">sep</span><span class="punctuation">,</span>
+  <span class="name attribute">title</span> <span class="punctuation">=</span> <span class="literal string">{On the Vulnerability of Finger Vein Recognition to Spoofing}</span><span class="punctuation">,</span>
+  <span class="name attribute">booktitle</span> <span class="punctuation">=</span> <span class="literal string">{IEEE International Conference of the Biometrics Special Interest Group (BIOSIG)}</span><span class="punctuation">,</span>
+  <span class="name attribute">year</span> <span class="punctuation">=</span> <span class="literal string">{2014}</span><span class="punctuation">,</span>
+  <span class="name attribute">location</span> <span class="punctuation">=</span> <span class="literal string">{Darmstadt, Germay}</span><span class="punctuation">,</span>
+  <span class="name attribute">url</span> <span class="punctuation">=</span> <span class="literal string">{http://publications.idiap.ch/index.php/publications/show/2910}</span>
+<span class="punctuation">}</span>
+</pre>
+<p>This paper contains results for the first fingervein presentation-attack
+detection competition. It also introduces protocols for PAD in the context of
+fingerveins:</p>
+<pre class="code bibtex literal-block">
+<span class="name class">&#64;inproceedings</span><span class="punctuation">{</span><span class="name label">Tome_ICB2015_AntiSpoofFVCompetition</span><span class="punctuation">,</span>
+  <span class="name attribute">author</span> <span class="punctuation">=</span> <span class="literal string">{Tome, Pedro and Raghavendra, R. and Busch, Christoph and Tirunagari, Santosh and Poh, Norman and Shekar, B. H. and Gragnaniello, Diego and Sansone, Carlo and Verdoliva, Luisa and Marcel, S{\'{e}}bastien}</span><span class="punctuation">,</span>
+  <span class="name attribute">keywords</span> <span class="punctuation">=</span> <span class="literal string">{Biometrics, Finger vein, Spoofing Attacks, Anti-spoofing}</span><span class="punctuation">,</span>
+  <span class="name attribute">month</span> <span class="punctuation">=</span> <span class="name variable">may</span><span class="punctuation">,</span>
+  <span class="name attribute">title</span> <span class="punctuation">=</span> <span class="literal string">{The 1st Competition on Counter Measures to Finger Vein Spoofing Attacks}</span><span class="punctuation">,</span>
+  <span class="name attribute">booktitle</span> <span class="punctuation">=</span> <span class="literal string">{The 8th IAPR International Conference on Biometrics (ICB)}</span><span class="punctuation">,</span>
+  <span class="name attribute">year</span> <span class="punctuation">=</span> <span class="literal string">{2015}</span><span class="punctuation">,</span>
+  <span class="name attribute">location</span> <span class="punctuation">=</span> <span class="literal string">{Phuket, Thailand}</span><span class="punctuation">,</span>
+  <span class="name attribute">url</span> <span class="punctuation">=</span> <span class="literal string">{http://publications.idiap.ch/index.php/publications/show/3095}</span>
+<span class="punctuation">}</span>
+</pre>
+<div class="section" id="data">
+<h1>Data</h1>
+<p>All fingervein samples have been recorded using the open finger vein sensor
+described in <a class="citation-reference" href="#bt12" id="id1">[BT12]</a>. A total of 110 subjects presented their 2 indexes to the
+sensor in a single session and recorded 2 samples per finger with 5 minutes
+separation between the 2 trials. The database, therefore, contains a total of
+440 samples and 220 unique fingers.</p>
+<p>The recordings were performed at 2 different locations, always inside buildings
+with normal light conditions. The data for the first 78 subjects derives from
+the the first location while the remaining 32 come from the second location.</p>
+<p>The dataset is composed of 40 women and 70 men whose ages are between 18 and 60
+with an average at 33. Information about gender and age of subjects are provided
+with our dataset interface.</p>
+<p>Samples are stored as follow with the following filename convention:
+<tt class="docutils literal"><span class="pre">full/bf/004-F/004_L_2</span></tt>. The fields can be interpreted as
+<tt class="docutils literal"><span class="pre">&lt;size&gt;/&lt;source&gt;/&lt;subject-id&gt;-&lt;gender&gt;/&lt;subject-id&gt;_&lt;side&gt;_&lt;trial&gt;</span></tt>. The
+<tt class="docutils literal">&lt;size&gt;</tt> represents one of two options <tt class="docutils literal">full</tt> or <tt class="docutils literal">cropped</tt>. The images in
+the <tt class="docutils literal">full</tt> directory contain the full image produced by the sensor. The
+images in the <tt class="docutils literal">cropped</tt> directory represent pre-cropped region-of-interests
+(RoI) which can be directly used for feature extraction without
+region-of-interest detection. We provide both verification and
+presentation-attack detection protocols for <tt class="docutils literal">full</tt> or <tt class="docutils literal">cropped</tt> versions of
+the images.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Images in the <tt class="docutils literal">cropped</tt> subdirectory where simply derived from images in
+the <tt class="docutils literal">full</tt> directory by cropping a fixed amount of 50 pixels from each
+border of the input image.</p>
+</div>
+<p>The <tt class="docutils literal">&lt;source&gt;</tt> field may one of <tt class="docutils literal">bf</tt> (<em>bona fide</em>) or <tt class="docutils literal">pa</tt> (presentation
+attack) and represent the genuiness of the image. Naturally, biometric
+recognition uses only images of the <tt class="docutils literal">bf</tt> folder for all protocols as
+indicated below.  The <tt class="docutils literal"><span class="pre">&lt;subject-id&gt;</span></tt> is a 3 digits number that stands for the
+subject's <strong>unique</strong> identifier. The <tt class="docutils literal">&lt;gender&gt;</tt> value can be either <tt class="docutils literal">M</tt>
+(male) or <tt class="docutils literal">F</tt> (female). The <tt class="docutils literal">&lt;side&gt;</tt> corresponds to the index finger side
+and can be set to either &quot;R&quot; or &quot;L&quot; (&quot;Right&quot; or &quot;Left&quot;). The <tt class="docutils literal">&lt;trial&gt;</tt>
+corresponds to either the first (1) or the second (2) time the subject
+interacted with the device.</p>
+<p>Images in the <tt class="docutils literal">full</tt> folder are stored in PNG format, with a size of 250x665
+pixels (height, width).  Size of the files is around 80 kbytes per sample.</p>
+<p>Here are examples of <em>bona fide</em> (<tt class="docutils literal">bf</tt>) samples from the <tt class="docutils literal">full</tt> folder
+inside the database, for subject <tt class="docutils literal"><span class="pre">029-M</span></tt>:</p>
+<div class="figure">
+<img alt="full/bf/029-M/029_L_1.png" src="full/bf/029-M/029_L_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the left index finger.</p>
+</div>
+<div class="figure">
+<img alt="full/bf/029-M/029_L_2.png" src="full/bf/029-M/029_L_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the left index finger.</p>
+</div>
+<div class="figure">
+<img alt="full/bf/029-M/029_R_1.png" src="full/bf/029-M/029_R_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the right index finger.</p>
+</div>
+<div class="figure">
+<img alt="full/bf/029-M/029_R_2.png" src="full/bf/029-M/029_R_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the right index finger.</p>
+</div>
+<p>Images in the <tt class="docutils literal">cropped</tt> folder are stored in PNG format, with a size of
+150x565 pixels (height, width). Because of the simplified sensor design and
+fixed finger positioning, cropping was performed by simply removing 50 pixels
+from each border of the original raw image. Size of the files is around 40
+kbytes per sample.</p>
+<p>Here are examples of <em>bona fide</em> (<tt class="docutils literal">bf</tt>) samples from the <tt class="docutils literal">cropped</tt> folder
+inside the database, for subject <tt class="docutils literal"><span class="pre">029-M</span></tt>:</p>
+<div class="figure">
+<img alt="cropped/bf/029-M/029_L_1.png" src="cropped/bf/029-M/029_L_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the left index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+<div class="figure">
+<img alt="cropped/bf/029-M/029_L_2.png" src="cropped/bf/029-M/029_L_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the left index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+<div class="figure">
+<img alt="cropped/bf/029-M/029_R_1.png" src="cropped/bf/029-M/029_R_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the right index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+<div class="figure">
+<img alt="cropped/bf/029-M/029_R_2.png" src="cropped/bf/029-M/029_R_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the right index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+<div class="section" id="biometric-data-acquisition-protocol">
+<h2>Biometric Data Acquisition Protocol</h2>
+<p>Subjects were asked to put their index in the sensor and then adjust the
+position such that the finger is on the center of the image. Bram Ton's
+Graphical User Interface (GUI) was used for visual feedback, Near Infra Red
+light control and acquisition.  When the automated light control was performing
+unproperly the operator adjusted manually the intensities of the leds to
+achieve a better contrast of the vein pattern.</p>
+<p>Subjects first presented an index, then the other, a second time the first
+index and a second time the second index. The whole process took around 5
+minutes per subject in average.</p>
+<p>The file <tt class="docutils literal">metadata.csv</tt> contains additional information of gender and age (at
+the time of capture) for each of the 110 individuals available in the dataset.</p>
+</div>
+<div class="section" id="presentation-attack-protocol">
+<h2>Presentation-Attack Protocol</h2>
+<p>To create effective presentation attacks for this dataset, images available
+were printed on high-quality (200 grams-per-square-meter - GSM) white paper
+using a laser printer (toner can absorb to near-infrared light used in
+fingervein sensors), and presented to the <strong>same</strong> sensor. More information and
+details can be found on Section 2.2 of the original publication <a class="citation-reference" href="#tvm14" id="id2">[TVM14]</a>.</p>
+<p>All presentation attacks were recorded using the same open finger vein
+sensor used to record the Biometric Recognition counterpart. Images are stored
+in PNG format, with a size of 250x665 pixels (height, width). Files are named
+in a matching convention to their counterparts in the biometric recognition.
+Size of the files is around 80 kbytes per sample.</p>
+<p>All <em>bonafide</em> samples corresponds to unaltered originals from the <tt class="docutils literal">bf</tt> part
+of the dataset.</p>
+<p>Images in the <tt class="docutils literal">full</tt> folder are stored in PNG format, with a size of 250x665
+pixels (height, width).  Size of the files is around 80 kbytes per sample.</p>
+<p>Here are examples of presentation-attack (<tt class="docutils literal">pa</tt>) samples from the <tt class="docutils literal">full</tt>
+folder inside the database, for subject <tt class="docutils literal"><span class="pre">029-M</span></tt>:</p>
+<div class="figure">
+<img alt="full/pa/029-M/029_L_1.png" src="full/pa/029-M/029_L_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the left index finger.</p>
+</div>
+<div class="figure">
+<img alt="full/pa/029-M/029_L_2.png" src="full/pa/029-M/029_L_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the left index finger.</p>
+</div>
+<div class="figure">
+<img alt="full/pa/029-M/029_R_1.png" src="full/pa/029-M/029_R_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the right index finger.</p>
+</div>
+<div class="figure">
+<img alt="full/pa/029-M/029_R_2.png" src="full/pa/029-M/029_R_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the right index finger.</p>
+</div>
+<p>Images in the <tt class="docutils literal">cropped</tt> folder are stored in PNG format, with a size of
+150x565 pixels (height, width). Cropping happened in the same way as for the
+original biometric recognition subset. The size of the files is around 40
+kbytes per sample.</p>
+<p>Here are examples of presentation-attack (<tt class="docutils literal">pa</tt>) samples from the <tt class="docutils literal">cropped</tt>
+folder inside the database, for subject <tt class="docutils literal"><span class="pre">029-M</span></tt>:</p>
+<div class="figure">
+<img alt="cropped/pa/029-M/029_L_1.png" src="cropped/pa/029-M/029_L_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the left index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+<div class="figure">
+<img alt="cropped/pa/029-M/029_L_2.png" src="cropped/pa/029-M/029_L_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the left index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+<div class="figure">
+<img alt="cropped/pa/029-M/029_R_1.png" src="cropped/pa/029-M/029_R_1.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the first
+trial for the right index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+<div class="figure">
+<img alt="cropped/pa/029-M/029_R_2.png" src="cropped/pa/029-M/029_R_2.png" />
+<p class="caption">Image from subject <tt class="docutils literal">0029</tt> (male). This image corresponds to the second
+trial for the right index finger. This version contains only the pre-cropped
+region-of-interest.</p>
+</div>
+</div>
+<div class="section" id="region-of-interest-annotations">
+<h2>Region-of-Interest Annotations</h2>
+<p>This repository contains the annotations for the fingervein recognition &quot;VERA&quot;
+fingervein dataset. Each annotation is a text file with points which mark the
+region-of-interest (RoI) in each image, containing the finger region and
+excluding the background. To make use of the annotations, you must join the
+points creating a polygon.</p>
+<p>Each annotation file contains annotation for a single, matching image in the
+original raw dataset. Each file is composed of as many lines as points
+annotated. There isn't a fixed number of annotations per file. The number of
+annoated points depends only on the finger contour - some fingers will have
+therefore more annotations than others. Each point is represented as two
+(16-bit) unsigned integer numbers representing the y and x coordinates in this
+order. Here is an example Python code using numpy that can read the annotations
+and return a 2D-array with them:</p>
+<pre class="literal-block">
+import numpy
+return numpy.loadtxt('/path/to/annotation/file.txt', dtype='uint16')
+</pre>
+<p>Annotations cover only raw data in the <tt class="docutils literal">full</tt> dataset directory. We don't
+provide annotations for the data in the <tt class="docutils literal">cropped</tt> directory for obvious
+reasons.</p>
+</div>
+</div>
+<div class="section" id="protocols">
+<h1>Protocols</h1>
+<p>You'll find a directory called <tt class="docutils literal">protocols</tt> which is distributed with the
+dataset. This directory contains filelists for each protocol that has even been
+published with the above-cited publications. Protocols are divided into two
+categories: biometric recognition (and vulnerability analysis), in the <tt class="docutils literal">bio</tt>
+sub-directory and presentation attack detection, in the <tt class="docutils literal">pad</tt> sub-directory.
+There are 4 protocols for biometric recognition and 2 protocols for
+presentation attack detection. Each biometric recognition protocol can also be
+used in two variants: <tt class="docutils literal">cropped</tt> (using pre-cropped regions-of-interest) and
+<tt class="docutils literal">va</tt> (for vulnerability analysis). They are described next.</p>
+<div class="section" id="the-bio-nom-protocol">
+<h2>The &quot;bio/Nom&quot; protocol</h2>
+<p>The &quot;Nom&quot; (normal operation mode) protocol corresponds to the standard
+biometric verification scenario. For the VERA database, each finger for all
+subjects will be used for enrolling and probing. Data from the first trial is
+used for enrollment, while data from the second trial is used for probing.
+Matching happens exhaustively. In summary:</p>
+<blockquote>
+<ul class="simple">
+<li>110 subjects x 2 fingers = 220 unique fingers</li>
+<li>2 trials per finger, so 440 unique images</li>
+<li>Use trial 1 for enrollment and trial 2 for probing</li>
+<li>Total of 220 genuine scores and 220x219 = 48180 impostor scores</li>
+<li>No images for training</li>
+</ul>
+</blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <tt class="docutils literal">cropped</tt> variant of this protocol simply uses images in the
+<tt class="docutils literal">cropped</tt> directory instead of those in the <tt class="docutils literal">full</tt> directory. For
+vulnerability analysis, use either images in the <tt class="docutils literal">full</tt> directory or
+<tt class="docutils literal">cropped</tt> directory, but match also against probes in the <tt class="docutils literal">*/pa</tt>
+directory <strong>respecting</strong> the probing part of this protocol.</p>
+</div>
+</div>
+<div class="section" id="the-bio-fifty-protocol">
+<h2>The &quot;bio/Fifty&quot; protocol</h2>
+<p>The &quot;Fifty&quot; protocol is meant as a reduced version of the &quot;Nom&quot; protocol, for
+quick check purposes. All definitions are the same, except we only use the
+first 50 subjects in the dataset (numbered 1 until 59). In summary:</p>
+<blockquote>
+<ul class="simple">
+<li>50 subjects x 2 fingers = 100 unique fingers</li>
+<li>2 sessions per finger, so 200 unique images</li>
+<li>Use trial sample 1 for enrollment and trial sample 2 for probing</li>
+<li>Total of 100 genuine scores and 100x99 = 9900 impostor scores</li>
+<li>Use all remaining images for training (440-200 = 240 images). In this case,
+the remaining images all belong to different subjects that those on the
+development set.</li>
+</ul>
+</blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <tt class="docutils literal">cropped</tt> variant of this protocol simply uses images in the
+<tt class="docutils literal">cropped</tt> directory instead of those in the <tt class="docutils literal">full</tt> directory. For
+vulnerability analysis, use either images in the <tt class="docutils literal">full</tt> directory or
+<tt class="docutils literal">cropped</tt> directory, but match also against probes in the <tt class="docutils literal">*/pa</tt>
+directory <strong>respecting</strong> the probing part of this protocol.</p>
+</div>
+</div>
+<div class="section" id="the-bio-b-protocol">
+<h2>The &quot;bio/B&quot; protocol</h2>
+<p>The &quot;B&quot; protocol was created to simulate a biometric recognition evaluation
+scenario similar to that from the UTFVP database (see <a class="citation-reference" href="#bt12" id="id3">[BT12]</a>). 108 unique
+fingers were picked:</p>
+<blockquote>
+<ul class="simple">
+<li>Each of the 2 fingers from the first 48 subjects (96 unique fingers),
+subjects numbered from 1 until 57</li>
+<li>The left fingers from the next 6 subjects (6 unique fingers), subjects
+numbered from 58 until 65</li>
+<li>The right fingers from the next 6 subjects (6 unique fingers), subjects
+numbered from 66 until 72</li>
+</ul>
+</blockquote>
+<p>Then, protocol &quot;B&quot; was setup in this way:</p>
+<blockquote>
+<ul class="simple">
+<li>108 unique fingers</li>
+<li>2 trials per finger, so 216 unique images</li>
+<li>Match all fingers against all images (even against itself)</li>
+<li>Total of 216x2 = 432 genuine scores and 216x214 = 46224 impostor scores</li>
+<li>Use all remaining images for training (440-216 = 224 samples). In this case,
+the remaining images not all belong to different subjects that those on the
+development set.</li>
+</ul>
+</blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <tt class="docutils literal">cropped</tt> variant of this protocol simply uses images in the
+<tt class="docutils literal">cropped</tt> directory instead of those in the <tt class="docutils literal">full</tt> directory. For
+vulnerability analysis, use either images in the <tt class="docutils literal">full</tt> directory or
+<tt class="docutils literal">cropped</tt> directory, but match also against probes in the <tt class="docutils literal">*/pa</tt>
+directory <strong>respecting</strong> the probing part of this protocol.</p>
+</div>
+</div>
+<div class="section" id="the-bio-full-protocol">
+<h2>The &quot;bio/Full&quot; protocol</h2>
+<p>The &quot;Full&quot; protocol is similar to protocol &quot;B&quot; in the sense it tries to match
+all existing images against all others (including itself), but uses all
+subjects and samples instead of a limited set. It was conceived to facilitate
+cross-folding tests on the database. So:</p>
+<blockquote>
+<ul class="simple">
+<li>220 unique fingers</li>
+<li>2 trials per finger, so 440 unique images</li>
+<li>Match all fingers against all images (even against itself)</li>
+<li>Total of 440x2 = 880 genuine scores and 440x438 = 192720 impostor scores</li>
+<li>No samples are available for training in this protocol</li>
+</ul>
+</blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <tt class="docutils literal">cropped</tt> variant of this protocol simply uses images in the
+<tt class="docutils literal">cropped</tt> directory instead of those in the <tt class="docutils literal">full</tt> directory. For
+vulnerability analysis, use either images in the <tt class="docutils literal">full</tt> directory or
+<tt class="docutils literal">cropped</tt> directory, but match also against probes in the <tt class="docutils literal">*/pa</tt>
+directory <strong>respecting</strong> the probing part of this protocol.</p>
+</div>
+</div>
+<div class="section" id="the-pad-full-protocol">
+<h2>The &quot;pad/full&quot; Protocol</h2>
+<p>This is a presentation attack detection protocol. It allows for training and
+evaluating binary-decision making counter-measures to Presentation Attacks. The
+available data comprised of <em>bonafide</em> and presentation attacks are split into
+3 sub-groups:</p>
+<ol class="arabic simple">
+<li>Training data (&quot;train&quot;), to be used for training your detector;</li>
+<li>Development data (&quot;dev&quot;), to be used for threshold estimation and
+fine-tunning;</li>
+<li>Test data (&quot;test&quot;), with which to report error figures;</li>
+</ol>
+<p>Clients that appear in one of the data sets (train, devel or test) do not
+appear in any other set.</p>
+<p>In this protocol, the full image as captured from the sensor is available to
+the user. Here is a summary:</p>
+<ul class="simple">
+<li>Training set: 30 subjects (identifiers from 1 to 31 inclusive). There are 240
+samples on this set.</li>
+<li>Development set: 30 subjects (identifiers from 32 to 72 inclusive). There are
+240 samples on this set.</li>
+<li>Test set: 50 subjects (identifiers from 73 to 124 inclusive). There are 400
+samples on this set.</li>
+</ul>
+</div>
+<div class="section" id="the-pad-cropped-protocol">
+<h2>The &quot;pad/cropped&quot; Protocol</h2>
+<p>In this protocol, only a pre-cropped image of size 150x565 pixels (height,
+width) is provided to the user, that can skip region-of-interest detection on
+the processing toolchain. The objective is to test user algorithms don't rely
+on information outside of the finger area for presentation attack detection.
+The subject separation is the same as for protocol &quot;full&quot;.</p>
+</div>
+</div>
+<div class="section" id="canonical-implementation">
+<h1>Canonical Implementation</h1>
+<p>We provide a canonical iterator implementation allowing quick programmatic
+access to the raw data provided by this dataset respecting the protocols above.
+You'll find this implementation in the package <a class="reference external" href="https://pypi.org/project/bob.db.verafinger">bob.db.verafinger</a>, which is
+part of the <a class="reference external" href="https://www.idiap.ch/software/bob">Bob</a> framework. Please address questions regarding this software to
+our <a class="reference external" href="https://www.idiap.ch/software/bob/discuss">mailing list</a>.</p>
+<table class="docutils citation" frame="void" id="bt12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[BT12]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id3">2</a>)</em> <em>B. Ton</em>. <strong>Vascular pattern of the finger: biometric of the future? Sensor design, data collection and performance verification</strong>. Masters Thesis, University of Twente, Netherlands, July 2012.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="tvm14" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[TVM14]</a></td><td><em>Pedro Tome, Matthias Vanoni and Sébastien Marcel</em>, <strong>On the Vulnerability of Finger Vein Recognition to Spoofing</strong>, in: IEEE International Conference of the Biometrics Special Interest Group (BIOSIG), Darmstadt, Germay, pages 1 - 10, IEEE, 2014</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

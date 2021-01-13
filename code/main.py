@@ -70,8 +70,10 @@ cycleGAN = cycleGAN(batch_size=args.batch_size_gan,
                     output_dir=args.output_dir,
                     stn=stn)
 
-cycleGAN.run()
+
+# cycleGAN.run()
     
+print("Applying GAN to DB")
 cycleGAN.apply_final()
 
 stn.train_ds = final_stn_loader(args.data_dir+args.output_dir+"final_gan/train/")

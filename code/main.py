@@ -71,7 +71,7 @@ cycleGAN = cycleGAN(batch_size=args.batch_size_gan,
                     stn=stn)
 
 
-# cycleGAN.run()
+cycleGAN.run()
     
 print("Applying GAN to DB")
 cycleGAN.apply_final()

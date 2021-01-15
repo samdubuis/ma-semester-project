@@ -1,13 +1,9 @@
-*.png
-*.jpg
-*.bmp
 
 img/
-output/
-output_08012021/
-output_500epochs_b32_21122020/
-output_padding_stn/
 docs/
+*.jpg
+*.png
+*.bmp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

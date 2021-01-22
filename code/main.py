@@ -59,7 +59,7 @@ stn.train()
 stn.evalutation()
 stn.apply_stn_to_data()
 
-
+exit()
 create_domainB(args.data_dir, args.gan_dir, args.brightness, phase="train")
 create_domainB(args.data_dir, args.gan_dir, args.brightness, phase="test")
 
